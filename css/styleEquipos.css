@@ -1,0 +1,165 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-image: url(https://wallpapercave.com/wp/wp4275519.jpg);
+    background-size: cover;
+    
+  
+}
+
+header {
+    background-color: #01164B;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    font-size: 1em !important;
+  background-color: #01164B;
+    padding: 10px 20px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 3em !important;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.form-box {
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+    max-width: 400px;
+    width: 100%;
+    color: #fff;
+    text-align: center; 
+}
+.form-value {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.form-box h2 {
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 2em !important;
+   
+}
+
+.input-box {
+    font-size: 1em !important;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    font-size: 1em !important;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    
+
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #888;
+    pointer-events: none;
+    transition: 0.3s ease-out;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -15px;
+    font-size: 1em !important;
+    color: #333;
+    font-family: 'Dancing Script', cursive;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section{
+    font-size: 1em !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: 'Dancing Script', cursive;
+   
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        margin-top: 100px; 
+        padding: 0 20px;
+    }
+
+ 
+    .form-box {
+        max-width: 100%;
+    }
+   
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav {
+        padding: 10px 20px;
+    }
+}
+
+.footer {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin: auto;
+}
+
+.footer p {
+    font-size: 14px;
+}
