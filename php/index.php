@@ -24,10 +24,9 @@
         <img src="../images/UEFA.png" alt="Logo UEFA">
       </div>
 -->
-      </header>
+     </header>
 
 <body>
-    <section id="about">
         <div class="container">
             <h2>Acerca de la UEFA</h2>
             <p>La UEFA (Unión de Asociaciones Europeas de Fútbol) es la organización responsable de organizar los campeonatos continentales de fútbol en Europa. </p>
