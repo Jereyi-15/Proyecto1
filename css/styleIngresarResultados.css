@@ -1,25 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color:  #030F62;
+
+    color: #fff;
     margin: 0;
-    padding: 20px;
-    align-items: flex-start;
+   
+   
 }
 
 h2, h3 {
-    color: #333;
+    color: #fff;
+   
 }
 
 form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 600px; 
-    margin: 0 auto; 
-
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
 }
+
 
 label {
     display: block;
@@ -34,7 +33,7 @@ input[type="number"] {
 }
 
 button[type="submit"] {
-    background-color: #007bff;
+    background-color:  #030F62;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -46,7 +45,6 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-
 header {
     background-color: #01164B;
     color: #fff;
@@ -54,7 +52,7 @@ header {
 }
 
 nav {
-  background-color: #01164B;
+    background-color: #01164B;
     padding: 10px 20px;
 }
 
@@ -62,6 +60,7 @@ nav h1 {
     margin: 0;
     font-size: 24px;
 }
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -77,12 +76,6 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
 }
-
-
-
-    
-
-
 
 .input-box input:focus + label,
 .input-box input:valid + label {
@@ -110,4 +103,12 @@ button {
 
 .footer p {
     font-size: 14px;
+}
+.group{
+    flex: 0 0 calc(30% - 20px); 
+    margin: 10px; 
+    background-color: inherit;
+    padding: 10px; 
+    box-sizing: border-box; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

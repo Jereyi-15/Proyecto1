@@ -55,8 +55,9 @@ require_once "connect.php";
             $query_equipos = $mysqli->query("SELECT nombre_equipo FROM Grupos WHERE nombre_grupo = '$grupo'");
             $equipos = $query_equipos->fetch_all(MYSQLI_ASSOC);
 
+            
             // Generar los partidos para cada equipo del grupo
-            echo "<h3>Grupo $grupo</h3>";
+         
             foreach ($equipos as $equipo) {
                 $equipo_local = $equipo['nombre_equipo'];
             
@@ -66,6 +67,8 @@ require_once "connect.php";
                         $equipo_visitante = $equipo_visitante['nombre_equipo'];
             
                         // Generar los campos del formulario para ingresar los resultados
+                        echo "<div class='group'>";
+                        echo "<h3>Grupo $grupo</h3>";
                         echo "<p><b>$equipo_local vs $equipo_visitante</b></p>";
                         echo "<label>Goles $equipo_local:</label>";
                         echo "<input type='number' name='goles_local[]'>";
@@ -74,6 +77,7 @@ require_once "connect.php";
                         echo "<input type='hidden' name='equipo_local[]' value='$equipo_local'>";
                         echo "<input type='hidden' name='equipo_visitante[]' value='$equipo_visitante'>";
                         echo "<br>";
+                        echo "</div>";
                     }
                 }
             }   

@@ -108,11 +108,7 @@ require_once "connect.php";
     ?>
 </section>
 
-<footer>
-        <div class="footer">
-            <p>&copy; 2024 UEFA - Todos los derechos reservados</p>
-        </div>
-</footer>
+
 
 </body>
 
