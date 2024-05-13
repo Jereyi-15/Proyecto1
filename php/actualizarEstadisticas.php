@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['equipo_local']) && iss
 
 // Si hay partidos jugados, mostrar un mensaje de error
 if (!empty($partidos_jugados)) {
-    echo "Los resultados se guardaron exitosamente. <br>";
+    echo "<h2>Los resultados se guardaron exitosamente. <br></h2>";
     echo "Pero los siguientes partidos ya se jugaron y no pueden ser ingresados nuevamente: <br>";
     foreach ($partidos_jugados as $partido) {
         echo $partido . "<br>";
@@ -114,8 +114,9 @@ if (!empty($partidos_jugados)) {
 
 // Después de salir del bucle, mostrar el mensaje de éxito
 if ($resultados_guardados) {
-    echo "Los resultados se guardaron exitosamente.";
+    echo "<h2>Los resultados se guardaron exitosamente.</h2>";
     header("refresh:2; url=ingresarResultados.php");
     exit();
 }
+
 ?>
