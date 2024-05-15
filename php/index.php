@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UEFA - Campeonatos Continentales</title>
     <link rel="stylesheet" href="../css/styleIndex.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
     <script type="text/javascript" src="../js/index.js" defer></script>
 </head>
 
@@ -17,9 +13,10 @@
 
     <header>
         <nav>
-            <a href="index.php"><img src="../images/champions_logo.png" alt="champions-logo"></a>
+            <img src="../images/champions_logo.png" alt="champions-logo">
             <ul class="menu-header">
-                <li><a class="active" href="verEstadisticas.php">Torneo</a></li>
+                <li><a class="active" href="#competiciones">Competiciones</a></li>
+                <li><a class="active" href="verEstadisticas.php"> Ver Grupos</a></li>
                 <li><a class="active" href="InicioSesion.php">Iniciar Sesión</a></li>
             </ul>
         </nav>
@@ -27,11 +24,6 @@
     </header>
 
     <div id="slider">
-
-        <div class="mySlides fade">
-            <img src="../images/slid-3.jpg" style="width:100%">
-        </div>
-
         <div class="mySlides fade">
             <img src="../images/slid-1.jpeg" style="width:100%">
         </div>
@@ -41,31 +33,19 @@
         </div>
 
         <div class="mySlides fade">
-            <img src="../images/slid-4.jpg" style="width:100%">
+            <img src="../images/slid-1.jpeg" style="width:100%">
         </div>
-
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
     </div>
-
-    <div class="acerca-de">
-        <div class="container">
-            <h2 class="titulos" style="color: #000080">UEFA</h2><br><br>
-            <p class="texto" style="color: #000080">La UEFA, la Unión de Asociaciones de Fútbol Europeas, es el organismo rector del fútbol europeo. 
-            Fundada en 1954, tiene su sede en Nyon, Suiza. </p><br>
-            <p class="texto" style="color: #000080">Su principal objetivo es promover y desarrollar el fútbol en Europa, 
-            tanto a nivel de selecciones nacionales como de clubes.</p><br>
-            <p class="texto" style="color: #000080">Una de las competiciones más destacadas que organiza la UEFA es la Liga de Campeones de la UEFA, 
-            conocida simplemente como la Champions League. Este torneo reúne a los mejores clubes de Europa en una emocionante batalla por el prestigioso 
-            título de campeón de clubes europeo. </p><br>
-            <p class="texto" style="color: #000080">Desde sus inicios en la temporada 1955-1956, la Champions League ha evolucionado para convertirse en uno de 
-            los eventos deportivos más importantes y seguidos a nivel mundial.</p>
-        </div>
-    </div>
-
+    <!--<div class="titulos">
+        <h2>OTROS TORNEOS</h2>
+    </div>-->
+    <div id="competiciones" class="container-torneos">
     <div class="container-torneos">
+
         <div id="torneos-half">
             <div class="card">
                 <img src="../images/ChampionsLeague.png" alt="Champions League Icon">
@@ -137,7 +117,7 @@
         </div>
 
     </div>
-
+    </div>
 
     <div class="contact">
 
@@ -186,32 +166,40 @@
                 </svg>
             </a>
         </div>
-
-        <div class="sugerencias">
-            <div class="contact-form-container">
-                <h2>Contacto</h2>
-                <p>¿Tienes alguna pregunta o sugerencia? ¡No dudes en ponerte en contacto con nosotros!</p>
-                <form action="submit_contact.php" method="POST" class="contact-form">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </div>
     </div>
 
-    <footer>
-<div class="footer">
-      <p>&copy; 2024 UEFA. Todos los derechos reservados.</p>
+    <div class="container">
+    <div class="form">
+        <div class="title">Contacto</div>
+        <div class="subtitle">¿Tienes alguna pregunta o sugerencia? ¡No dudes en ponerte en contacto con nosotros!</div>
+
+        <div class="input-container ic1">
+            <input placeholder="" type="text" class="input" id="firstname" name="nombre">
+            <div class="cut"></div>
+            <label class="iLabel" for="firstname">Nombre</label>
+        </div>
+
+        <div class="input-container ic2">
+            <input placeholder="" type="text" class="input" id="email" name="email">
+            <div class="cut cut-short"></div>
+            <label class="iLabel" for="email">Email</label>
+        </div>
+
+        <div class="input-container ic2">
+            <textarea placeholder="" class="input" id="message" rows="4" name="mensaje"></textarea>
+            <div class="cut"></div>
+            <label class="iLabel" for="message">Mensaje</label>
+        </div>
+
+        <button class="submit" type="submit">Enviar</button>
+    </div>
+    </div>
+
+<footer>
+     <div class="footer">
+        <p>&copy; 2024 UEFA. Todos los derechos reservados.</p>
     </div>
 </footer>
 
 </body>
-
-
-
 </html>
