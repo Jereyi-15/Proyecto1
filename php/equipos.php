@@ -2,15 +2,15 @@
 session_start();
 
 // Verificar y cerrar la sesión si está inactiva por más de 10 minutos
-if(isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 600)) {
+if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 600)) {
     session_unset();
     session_destroy();
     header("Location: InicioSesion.php");
-    exit(); 
+    exit();
 }
 
 // Actualizar el tiempo de la última actividad
-$_SESSION['LAST_ACTIVITY'] = time(); 
+$_SESSION['LAST_ACTIVITY'] = time();
 
 // Comprobar si el usuario está autenticado
 if (!isset($_SESSION['user'])) {
@@ -24,11 +24,12 @@ require_once "connect.php";
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/styleEquipos.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/styleGuardarDatos.css"> 
+    <link rel="stylesheet" href="../css/styleGuardarDatos.css">
     <title>Guardar datos</title>
 </head>
 
@@ -36,34 +37,37 @@ require_once "connect.php";
     <nav>
         <h1><a href="index.php">UEFA</a></h1>
         <ul class="menu-header">
-        <li><a href="verGrupos.php">Realizar Sorteo</a></li>
-        <li><a class="active" href="logout.php">Cerrar Sesion</a></li>
+            <li><a href="verGrupos.php">Realizar Sorteo</a></li>
+            <li><a class="active" href="logout.php">Cerrar Sesion</a></li>
         </ul>
     </nav>
 </header>
 
 <body>
 
-<section>
-    <div class="form-box">
-        <div class="form-value">
-            <form action="ingresarEquipos.php" method="POST"> 
-                <h2>Ingresar Equipos</h2>
-                <div class="input-box">
-                    <input type="text" name="nombre_equipo" required>
+    <section>
+        
+        <div class="login-box">
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" required="">
                     <label>Nombre del Equipo</label>
                 </div>
-                <div class="input-box">
-                    <input type="text" name="pais" required>
+                <div class="user-box">
+                    <input type="password" name="" required="">
                     <label>País de Procedencia</label>
                 </div>
-                <button type="submit">Guardar</button>
+                <center>
+                    <a href="#">
+                        Guardar
+                        <span></span>
+                    </a>
+                </center>
             </form>
         </div>
-    </div>
-</section>
+
+    </section>
 
 </body>
+
 </html>
-
-
