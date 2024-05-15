@@ -136,7 +136,15 @@ section{
     outline: none;
     background: transparent;
   }
-  
+  a {
+    color: inherit; /* Hereda el color del elemento padre */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+a:hover {
+    color: #ffd401; /* Puedes cambiar el color del enlace al pasar el cursor, si lo deseas */
+    text-decoration: none; /* Mantiene el subrayado eliminado en el estado hover */
+}
   .login-box .user-box label {
     position: absolute;
     top: 0;
