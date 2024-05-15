@@ -49,7 +49,9 @@ require_once "connect.php";
         <h2>Grupos y Equipos</h2>
 
         <form action="realizarSorteo.php" method="POST">
-            <button type="submit" name="realizar_sorteo">Realizar Sorteo</button>
+            <div class="container">
+            <button class="button" type="submit" name="realizar_sorteo">Realizar Sorteo</button>
+            </div>
         </form>
 
         <?php
