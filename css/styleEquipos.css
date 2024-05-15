@@ -3,8 +3,9 @@ body {
     margin: 0;
     padding: 0;
     justify-content: center;
-    background-color: #3562A6;
+    background-image: url(https://wallpapercave.com/wp/wp4275519.jpg);
     background-size: cover;
+    font-family: Arial, sans-serif;;
     
   
 }
@@ -124,10 +125,18 @@ section{
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    font-family: 'Dancing Script', cursive;
+    font-family: Arial, sans-serif;;
    
 }
+a {
+    color: inherit;
+    text-decoration: none; 
+}
 
+a:hover {
+    color: #ffd401; 
+    text-decoration: none; 
+}
 @media screen and (max-width: 600px) {
 
     .container {
