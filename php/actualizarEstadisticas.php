@@ -1,14 +1,29 @@
 <?php
 require_once "connect.php"; // Incluye el archivo de conexión a la base de datos
 
-$resultados_guardados = false;
-$partidos_jugados = [];
-
+// Verificar si se recibieron los datos del resultado del partido
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['equipo_local']) && isset($_POST['equipo_visitante']) && isset($_POST['goles_local']) && isset($_POST['goles_visitante'])) {
     $equiposLocales = $_POST['equipo_local'];
     $equiposVisitantes = $_POST['equipo_visitante'];
     $golesLocales = $_POST['goles_local'];
     $golesVisitantes = $_POST['goles_visitante'];
+
+    // Verificar si todos los campos están vacíos
+    $allFieldsEmpty = true;
+    for ($i = 0; $i < count($golesLocales); $i++) {
+        if ($golesLocales[$i] !== '' && $golesVisitantes[$i] !== '') {
+            $allFieldsEmpty = false;
+            break;
+        }
+    }
+
+    if ($allFieldsEmpty) {
+        header("Location: ingresarResultados.php");
+        exit();
+    }
+
+    $resultados_guardados = false;
+    $partidos_jugados = [];
 
     for ($i = 0; $i < count($equiposLocales); $i++) {
         $equipoLocal = $equiposLocales[$i];
@@ -95,20 +110,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['equipo_local']) && iss
             }
         }
     }
-}
 
-if (!empty($partidos_jugados)) {
-    echo "<h2>Los resultados se guardaron exitosamente. <br></h2>";
-    echo "Pero los siguientes partidos ya se jugaron y no pueden ser ingresados nuevamente: <br>";
-    foreach ($partidos_jugados as $partido) {
-        echo $partido . "<br>";
+    if (!empty($partidos_jugados)) {
+        echo "<h2>Los resultados se guardaron exitosamente. <br></h2>";
+        echo "Pero los siguientes partidos ya se jugaron y no pueden ser ingresados nuevamente: <br>";
+        foreach ($partidos_jugados as $partido) {
+            echo $partido . "<br>";
+        }
+        header("refresh:5; url=ingresarResultados.php");
+        exit();
     }
-    header("refresh:5; url=ingresarResultados.php");
-    exit();
-}
 
-if ($resultados_guardados) {
-    echo "<h2>Los resultados se guardaron exitosamente.</h2>";
-    header("refresh:2; url=ingresarResultados.php");
+    if ($resultados_guardados) {
+        echo "<h2>Los resultados se guardaron exitosamente.</h2>";
+        header("refresh:2; url=ingresarResultados.php");
+        exit();
+    }
+} else {
+    header("Location: ingresarResultados.php");
     exit();
 }
+?>
