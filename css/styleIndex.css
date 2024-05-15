@@ -184,7 +184,6 @@ nav h1 {
 }
 
 .container-torneos {
-  background-image: url(../images/fondo.webp);
   width: 100%;
   position: center;
   display: flex;
@@ -376,6 +375,8 @@ nav h1 {
   justify-content: center; 
   align-items: center; 
   height: 100vh; 
+  background: url(../images/FondoContacto.webp)no-repeat;
+  background-size: cover;
 }
 
 .form {
