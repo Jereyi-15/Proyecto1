@@ -83,7 +83,7 @@
         </div>
         <div id="torneos-half">
             <div class="card">
-                <img src="../images/women_qualifiers_logo.png" alt="womanQualifiersIcon">
+                <img src="../images/women_champions_logo.png" alt="womanQualifiersIcon">
                 <div class="card__content">
                     <p class="card__title">UEFA Women's Champions League</p>
                     <p class="card__description">La UEFA Women's Champions League es la cúspide del fútbol femenino a
