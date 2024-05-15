@@ -44,53 +44,60 @@ require_once "connect.php";
 
 <body>
 
-    <h2>Ingresar Resultados de Partidos</h2>
+    <h2 class="titulo">Ingresar Resultados de Partidos</h2>
     <form action="actualizarEstadisticas.php" method="post">
-        <?php
-        // Obtener los grupos disponibles
-        $grupos = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H');
+    <?php
+// Obtener los grupos disponibles
+$grupos = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H');
 
-        foreach ($grupos as $grupo) {
-            // Obtener los equipos del grupo actual
-            $query_equipos = $mysqli->query("SELECT nombre_equipo FROM Grupos WHERE nombre_grupo = '$grupo'");
-            $equipos = $query_equipos->fetch_all(MYSQLI_ASSOC);
+foreach ($grupos as $grupo) {
+    // Obtener los equipos del grupo actual
+    $query_equipos = $mysqli->query("SELECT nombre_equipo FROM Grupos WHERE nombre_grupo = '$grupo'");
+    $equipos = $query_equipos->fetch_all(MYSQLI_ASSOC);
 
-            
-            // Generar los partidos para cada equipo del grupo
-         
-            foreach ($equipos as $equipo) {
-                $equipo_local = $equipo['nombre_equipo'];
-            
-                // Iterar sobre los equipos restantes para generar los partidos
-                foreach ($equipos as $equipo_visitante) {
-                    if ($equipo_visitante['nombre_equipo'] != $equipo_local) {
-                        $equipo_visitante = $equipo_visitante['nombre_equipo'];
-            
-                        // Generar los campos del formulario para ingresar los resultados
-                        echo "<div class='group'>";
-                        echo "<h3>Grupo $grupo</h3>";
-                        echo "<p><b>$equipo_local vs $equipo_visitante</b></p>";
-                        echo "<label>Goles $equipo_local:</label>";
-                        echo "<input type='number' name='goles_local[]'>";
-                        echo "<label>Goles $equipo_visitante:</label>";
-                        echo "<input type='number' name='goles_visitante[]'>";
-                        echo "<input type='hidden' name='equipo_local[]' value='$equipo_local'>";
-                        echo "<input type='hidden' name='equipo_visitante[]' value='$equipo_visitante'>";
-                        echo "<br>";
-                        echo "</div>";
-                    }
-                }
-            }   
+    
+    // Generar los partidos para cada equipo del grupo
+     
+    foreach ($equipos as $equipo) {
+        $equipo_local = $equipo['nombre_equipo'];
+        
+        // Iterar sobre los equipos restantes para generar los partidos
+        foreach ($equipos as $equipo_visitante) {
+            if ($equipo_visitante['nombre_equipo'] != $equipo_local) {
+                $equipo_visitante = $equipo_visitante['nombre_equipo'];
+                
+                // Generar los campos del formulario para ingresar los resultados
+                echo "<div class='card'>";
+                echo "<div class='group'>";
+                echo "<h2>Grupo $grupo</h2>";
+                echo "<p><b>$equipo_local<br> vs<br> $equipo_visitante</b></p>";
+                echo "<label>Goles $equipo_local:</label>";
+                echo "<input type='number' name='goles_local[]'>";
+                echo "<label>Goles $equipo_visitante:</label>";
+                echo "<input type='number' name='goles_visitante[]'>";
+                echo "<input type='hidden' name='equipo_local[]' value='$equipo_local'>";
+                echo "<input type='hidden' name='equipo_visitante[]' value='$equipo_visitante'>";
+                echo "<br>";
+                echo "</div>"; // Cerrar div.group
+                echo "</div>"; // Cerrar div.card
+
+            }
         }
-        ?>
-        <button type="submit">Guardar Resultados</button>
+    }   
+}
+?>
+
+    <button>
+        <span>Guardar Resultados</span>
+    </button>
+
     </form>
 </body>
 
 <footer>
-        <div class="footer">
-            <p>&copy; 2024 UEFA - Todos los derechos reservados</p>
-        </div>
+<div class="footer">
+      <p>&copy; 2024 UEFA. Todos los derechos reservados.</p>
+    </div>
 </footer>
 
 </html>
