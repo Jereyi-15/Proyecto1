@@ -47,7 +47,38 @@
 
         <div id="torneos-half">
             <div class="card">
-                <img src="../images/women_champions_logo.png" alt="womanChampionsIcon">
+                <img src="../images/ChampionsLeague.png" alt="Champions League Icon">
+                <div class="card__content">
+                    <p class="card__title">UEFA Champions League</p>
+                    <p class="card__description">La UEFA Champions League es el torneo de fútbol más prestigioso de Europa,
+                        donde los clubes más destacados compiten por el título.
+                        Con una historia rica en momentos épicos y rivalidades legendarias,
+                        esta competición captura la atención de millones de aficionados en todo el mundo.
+                        Desde los enfrentamientos emocionantes en la fase de grupos hasta las dramáticas eliminatorias en la etapa final,
+                        la Champions League es un espectáculo que nunca decepciona,
+                        brindando momentos de gloria y pasión futbolística que perduran en la memoria de los aficionados.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../images/Europa_League_2021.svg.png" alt="europaLeagueIcon">
+                <div class="card__content">
+                    <p class="card__title">UEFA Europa League</p>
+                    <p class="card__description">La UEFA Europa League es una competición emocionante que reúne a
+                        algunos de los mejores equipos de
+                        fútbol de toda Europa, ofreciendo una emocionante mezcla de acción, drama y talento
+                        futbolístico. Como hermana menor de la
+                        UEFA Champions League, esta competición brinda a equipos de diferentes países la oportunidad de
+                        enfrentarse entre sí en un
+                        ambiente de alta intensidad y pasión. Con una rica historia y una amplia base de seguidores, la
+                        UEFA Europa League es una
+                        parte integral del panorama futbolístico europeo, donde los sueños se hacen realidad y se forjan
+                        nuevas leyendas.</p>
+                </div>
+            </div>
+        </div>
+        <div id="torneos-half">
+            <div class="card">
+                <img src="../images/women_qualifiers_logo.png" alt="womanQualifiersIcon">
                 <div class="card__content">
                     <p class="card__title">UEFA Women's Champions League</p>
                     <p class="card__description">La UEFA Women's Champions League es la cúspide del fútbol femenino a
@@ -63,43 +94,6 @@
                         femenino, un escaparate de la excelencia deportiva y un tributo al poder del juego para unir a
                         personas de todas las edades,
                         géneros y culturas en todo el mundo.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../images/Europa_League_2021.svg.png" alt="europaLeagueIcon">
-                <div class="card__content">
-                    <p class="card__title">Women's European Qualifiers</p>
-                    <p class="card__description">Las Clasificatorias Europeas Femeninas son la antesala de los grandes
-                        escenarios internacionales
-                        del fútbol femenino. En esta emocionante etapa de la competición, equipos de toda Europa se
-                        enfrentan en intensos encuentros,
-                        luchando por asegurar su participación en los torneos más prestigiosos del continente. Cada
-                        partido es una oportunidad para
-                        que las jugadoras demuestren su habilidad, determinación y espíritu de equipo, en un viaje hacia
-                        la gloria que inspira a
-                        millones de aficionados en todo el mundo. Desde las potencias tradicionales hasta los aspirantes
-                        emergentes,
-                        las Clasificatorias Europeas Femeninas son un campo de juego donde se celebran los valores del
-                        fútbol y se forjan historias
-                        de éxito que perduran en la memoria de los aficionados durante generaciones.</p>
-                </div>
-            </div>
-        </div>
-        <div id="torneos-half">
-            <div class="card">
-                <img src="../images/women_qualifiers_logo.png" alt="womanQualifiersIcon">
-                <div class="card__content">
-                    <p class="card__title">UEFA Europa League</p>
-                    <p class="card__description">La UEFA Europa League es una competición emocionante que reúne a
-                        algunos de los mejores equipos de
-                        fútbol de toda Europa, ofreciendo una emocionante mezcla de acción, drama y talento
-                        futbolístico. Como hermana menor de la
-                        UEFA Champions League, esta competición brinda a equipos de diferentes países la oportunidad de
-                        enfrentarse entre sí en un
-                        ambiente de alta intensidad y pasión. Con una rica historia y una amplia base de seguidores, la
-                        UEFA Europa League es una
-                        parte integral del panorama futbolístico europeo, donde los sueños se hacen realidad y se forjan
-                        nuevas leyendas.</p>
                 </div>
             </div>
             <div class="card">
@@ -121,20 +115,6 @@
             </div>
         </div>
 
-    </div>
-
-
-    <div class="acerca-de">
-        <div class="container">
-            <h2 class="titulos">UEFA</h2>
-            <p class="texto">La UEFA Europa League es otra competición importante de clubes de fútbol en Europa. Está
-                abierta a
-                equipos de diferentes ligas europeas, y ofrece una oportunidad para que los equipos compitan a nivel
-                continental.</p>
-            <p class="texto">La Europa League también cuenta con una fase de grupos seguida de eliminatorias directas,
-                culminando en
-                una final emocionante.</p>
-        </div>
     </div>
 
     <div class="contact">
@@ -203,10 +183,10 @@
     </div>
 
     <footer>
-        <div class="footer">
-            <p>&copy; 1998-2024 UEFA. All rights reserved.</p>
-        </div>
-    </footer>
+<div class="footer">
+      <p>&copy; 2024 UEFA. Todos los derechos reservados.</p>
+    </div>
+</footer>
 
 </body>
 
