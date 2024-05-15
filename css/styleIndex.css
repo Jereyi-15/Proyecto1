@@ -96,6 +96,7 @@ img {
   }
 }
 
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -266,6 +267,13 @@ nav h1 {
   color: #333;
   line-height: 1.4;
 
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 90%; /* Cambia el ancho de las tarjetas en pantallas más pequeñas */
+    margin: 5% auto; /* Ajusta los márgenes para centrar las tarjetas */
+  }
 }
 
 .sugerencias {
