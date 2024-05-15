@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UEFA - Campeonatos Continentales</title>
     <link rel="stylesheet" href="../css/styleIndex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script type="text/javascript" src="../js/index.js" defer></script>
 </head>
 
@@ -13,7 +17,7 @@
 
     <header>
         <nav>
-            <img src="../images/champions_logo.png" alt="champions-logo">
+            <a href="index.php"><img src="../images/champions_logo.png" alt="champions-logo"></a>
             <ul class="menu-header">
                 <li><a class="active" href="verEstadisticas.php">Torneo</a></li>
                 <li><a class="active" href="#">Partidos</a></li>
@@ -24,6 +28,11 @@
     </header>
 
     <div id="slider">
+
+        <div class="mySlides fade">
+            <img src="../images/slid-3.jpg" style="width:100%">
+        </div>
+
         <div class="mySlides fade">
             <img src="../images/slid-1.jpeg" style="width:100%">
         </div>
@@ -33,18 +42,31 @@
         </div>
 
         <div class="mySlides fade">
-            <img src="../images/slid-1.jpeg" style="width:100%">
+            <img src="../images/slid-4.jpg" style="width:100%">
         </div>
+
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
     </div>
-    <!--<div class="titulos">
-        <h2>OTROS TORNEOS</h2>
-    </div>-->
-    <div class="container-torneos">
 
+    <div class="acerca-de">
+        <div class="container">
+            <h2 class="titulos" style="color: #000080">UEFA</h2>
+            <p class="texto" style="color: #000080">La UEFA Europa League es otra competición importante de clubes de
+                fútbol en Europa. Está
+                abierta a
+                equipos de diferentes ligas europeas, y ofrece una oportunidad para que los equipos compitan a nivel
+                continental.</p>
+            <p class="texto" style="color: #000080">La Europa League también cuenta con una fase de grupos seguida de
+                eliminatorias directas,
+                culminando en
+                una final emocionante.</p>
+        </div>
+    </div>
+
+    <div class="container-torneos">
         <div id="torneos-half">
             <div class="card">
                 <img src="../images/ChampionsLeague.png" alt="Champions League Icon">
@@ -117,6 +139,7 @@
 
     </div>
 
+
     <div class="contact">
 
         <div class="social-buttons">
@@ -176,7 +199,7 @@
                     <input type="email" id="email" name="email" required>
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" required></textarea>
-                    <button type="submit">Enviar Mensaje</button>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
         </div>
