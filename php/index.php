@@ -25,7 +25,7 @@
 
     <div id="slider">
         <div class="mySlides fade">
-            <img src="../images/slid-1.jpeg" style="width:100%">
+            <img src="../images/slid-3.jpg" style="width:100%">
         </div>
 
         <div class="mySlides fade">
@@ -34,6 +34,10 @@
 
         <div class="mySlides fade">
             <img src="../images/slid-1.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../images/slid-4.jpg" style="width:100%">
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
