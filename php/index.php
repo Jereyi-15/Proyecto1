@@ -20,7 +20,6 @@
             <a href="index.php"><img src="../images/champions_logo.png" alt="champions-logo"></a>
             <ul class="menu-header">
                 <li><a class="active" href="verEstadisticas.php">Torneo</a></li>
-                <li><a class="active" href="#">Partidos</a></li>
                 <li><a class="active" href="InicioSesion.php">Iniciar Sesión</a></li>
             </ul>
         </nav>
@@ -53,16 +52,16 @@
 
     <div class="acerca-de">
         <div class="container">
-            <h2 class="titulos" style="color: #000080">UEFA</h2>
-            <p class="texto" style="color: #000080">La UEFA Europa League es otra competición importante de clubes de
-                fútbol en Europa. Está
-                abierta a
-                equipos de diferentes ligas europeas, y ofrece una oportunidad para que los equipos compitan a nivel
-                continental.</p>
-            <p class="texto" style="color: #000080">La Europa League también cuenta con una fase de grupos seguida de
-                eliminatorias directas,
-                culminando en
-                una final emocionante.</p>
+            <h2 class="titulos" style="color: #000080">UEFA</h2><br><br>
+            <p class="texto" style="color: #000080">La UEFA, la Unión de Asociaciones de Fútbol Europeas, es el organismo rector del fútbol europeo. 
+            Fundada en 1954, tiene su sede en Nyon, Suiza. </p><br>
+            <p class="texto" style="color: #000080">Su principal objetivo es promover y desarrollar el fútbol en Europa, 
+            tanto a nivel de selecciones nacionales como de clubes.</p><br>
+            <p class="texto" style="color: #000080">Una de las competiciones más destacadas que organiza la UEFA es la Liga de Campeones de la UEFA, 
+            conocida simplemente como la Champions League. Este torneo reúne a los mejores clubes de Europa en una emocionante batalla por el prestigioso 
+            título de campeón de clubes europeo. </p><br>
+            <p class="texto" style="color: #000080">Desde sus inicios en la temporada 1955-1956, la Champions League ha evolucionado para convertirse en uno de 
+            los eventos deportivos más importantes y seguidos a nivel mundial.</p>
         </div>
     </div>
 
