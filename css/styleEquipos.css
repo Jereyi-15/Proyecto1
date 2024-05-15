@@ -125,17 +125,8 @@ section{
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    font-family: Arial, sans-serif;;
+    
    
-}
-a {
-    color: inherit;
-    text-decoration: none; 
-}
-
-a:hover {
-    color: #ffd401; 
-    text-decoration: none; 
 }
 @media screen and (max-width: 600px) {
 
