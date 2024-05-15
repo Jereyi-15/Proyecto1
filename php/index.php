@@ -15,7 +15,7 @@
         <nav>
             <img src="../images/champions_logo.png" alt="champions-logo">
             <ul class="menu-header">
-                <li><a class="active" href="#">Torneos</a></li>
+                <li><a class="active" href="verEstadisticas.php">Torneo</a></li>
                 <li><a class="active" href="#">Partidos</a></li>
                 <li><a class="active" href="InicioSesion.php">Iniciar Sesión</a></li>
             </ul>
