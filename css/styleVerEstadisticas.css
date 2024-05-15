@@ -23,6 +23,14 @@ nav h1 {
     color: #fff;
     font-size: 24px;
   }
+
+h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
   
 .header {
     /*padding-top: 100px;*/
@@ -74,7 +82,7 @@ table {
     width: 70%; /* Cambiamos el ancho a un valor relativo */
     margin: 0 auto; /* Centramos la tabla */
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     background-color: inherit;
     border-color: #fff;
     border: 1px solid transparent; /* Asegura que haya espacio para la sombra */

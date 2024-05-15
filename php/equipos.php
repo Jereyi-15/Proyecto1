@@ -34,39 +34,38 @@ require_once "connect.php";
 </head>
 
 <header>
-    <nav>
-        <h1><a href="index.php">UEFA</a></h1>
-        <ul class="menu-header">
-            <li><a href="verGrupos.php">Realizar Sorteo</a></li>
-            <li><a class="active" href="logout.php">Cerrar Sesion</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav>
+            <h1><a>UEFA</a></h1>
+            <ul class="menu-header">
+                <li><a href="verGrupos.php">Realizar Sorteo</a></li>
+                <li><a class="active" href="logout.php">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+
+    </header>
 
 <body>
 
-    <section>
-        
-        <div class="login-box">
-            <form>
-                <div class="user-box">
-                    <input type="text" name="" required="">
+<section>
+    <div class="form-box">
+        <div class="form-value">
+            <form action="ingresarEquipos.php" method="POST"> 
+                <div class="input-box">
+                    <input type="text" name="nombre_equipo" required>
                     <label>Nombre del Equipo</label>
                 </div>
-                <div class="user-box">
-                    <input type="password" name="" required="">
+                <div class="input-box">
+                    <input type="text" name="pais" required>
                     <label>País de Procedencia</label>
                 </div>
                 <center>
-                    <a href="#">
-                        Guardar
-                        <span></span>
-                    </a>
+                    <button type="submit">Guardar</button>
                 </center>
             </form>
         </div>
+    </div>
+</section>
 
-    </section>
 
 </body>
 
