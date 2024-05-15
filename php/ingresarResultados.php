@@ -31,6 +31,8 @@ require_once "connect.php";
     <link rel="stylesheet" href="../css/styleIngresarResultados.css">
 </head>
 
+<body>
+
 <header>
     <nav>
         <h1>UEFA</h1>
@@ -41,8 +43,6 @@ require_once "connect.php";
         </ul>
     </nav>
 </header>
-
-<body>
 
     <h2 class="titulo">Ingresar Resultados de Partidos</h2>
     <form action="actualizarEstadisticas.php" method="post">
@@ -92,14 +92,8 @@ foreach ($grupos as $grupo) {
     </button>
 
     </form>
+
 </body>
-
-<footer>
-<div class="footer">
-      <p>&copy; 2024 UEFA. Todos los derechos reservados.</p>
-    </div>
-</footer>
-
 </html>
 
 
