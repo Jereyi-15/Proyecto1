@@ -50,9 +50,11 @@ require_once "connect.php";
 
         <form action="realizarSorteo.php" method="POST">
             <div class="container">
-            <button class="button" type="submit" name="realizar_sorteo">Realizar Sorteo</button>
+            <button class="btn" type="submit" name="realizar_sorteo">Realizar Sorteo</button>
             </div>
         </form>
+
+
 
         <?php
 
