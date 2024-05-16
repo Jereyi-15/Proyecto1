@@ -1,6 +1,7 @@
 <?php
 $email = $_POST['email'];
-$clave = ($_POST['clave']);
+//$clave = ($_POST['clave']);
+$clave = md5($_POST['clave']); // Hashear la contraseña ingresada con MD5
 $query = "SELECT * FROM administrador WHERE Email='$email' AND Clave='$clave'";
 $consulta2 = $mysqli->query($query);
 if($consulta2->num_rows >= 1){
